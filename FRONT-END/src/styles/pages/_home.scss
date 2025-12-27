@@ -1,0 +1,47 @@
+.main {
+  padding: 2rem;
+}
+
+.header {
+  border: solid #1f6feb;
+  height: 10dvh;
+  width: 90dvw;
+  justify-self: center;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background-color: #234c86;
+  color: aliceblue;
+  text-align: center;
+  font-family: "BBH Bartle", sans-serif;
+  font-weight: 200;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  width: 90dvw;
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.section_menu {
+  border: solid #1f6feb;
+  background-color: #234c86;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  list-style: none;
+  width: 50dvw;
+  justify-self: center;
+}
+
+.link {
+  all: unset;
+}
+
+.image_menu {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

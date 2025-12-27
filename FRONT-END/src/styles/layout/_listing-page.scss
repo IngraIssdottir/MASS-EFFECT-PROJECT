@@ -1,0 +1,98 @@
+.list_title_cont {
+  border: solid #1f6feb;
+  height: 10dvh;
+  width: 90dvw;
+  justify-self: center;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background-color: #234c86;
+  color: aliceblue;
+  text-align: center;
+  font-family: "BBH Bartle", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list_title {
+  font-weight: 100;
+  margin-top: 2rem;
+  font-size: x-large;
+}
+
+.link {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.cards_cont {
+  margin: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  gap: 8px;
+  justify-items: anchor-center;
+  width: 90dvw;
+}
+
+.item_card {
+  background-color: #234c86;
+  color: aliceblue;
+  text-align: center;
+  font-weight: 200;
+  border: solid #1f6feb;
+  border-radius: 10px;
+}
+
+.image_cont {
+  padding: 10px;
+}
+
+.item_img {
+  max-width: 200px;
+}
+
+@media (min-width: 600px) {
+  .cards_cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 8px;
+  }
+
+  .list_title {
+    font-size: xx-large;
+  }
+}
+
+@media (min-width: 768px) {
+  .cards_cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 8px;
+  }
+
+  .list_title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards_cont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards_cont {
+    .cards_cont {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 8px;
+    }
+  }
+}
