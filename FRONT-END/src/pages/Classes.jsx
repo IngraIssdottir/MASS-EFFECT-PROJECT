@@ -20,7 +20,7 @@ function Classes() {
       <section className="list_title_cont">
         <h1 className="list_title">Classes</h1>
         <NavLink className="link" to="/">
-          Volver a Inicio
+          ← Back to Home
         </NavLink>
       </section>
 

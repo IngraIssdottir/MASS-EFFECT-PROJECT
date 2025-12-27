@@ -18,45 +18,94 @@ function CharacterDetail() {
     return <p>Cargando personaje...</p>;
   }
 
-
   return (
     <div>
       <section className="list_title_cont">
         <h1 className="list_title">Character Detail</h1>
-        <NavLink className="link" to="/characters">
-          Back to Characters
-        </NavLink>
       </section>
 
-      <section className="cards_cont">
-        <article className="item_card">
-          <div className="image_cont">
+      <article className="detail_card">
+        {/* COLUMNA IZQUIERDA */}
+        <section className="detail_left">
+          {/* Imagen */}
+          <div className="detail_image_cont">
             <img
-              className="item_img"
+              className="detail_img"
               src={character.img}
-              alt={`imagen de ${character.name}`}
+              alt={`Imagen de ${character.name}`}
             />
           </div>
 
-          <div className="item_info">
-            <h4 className="item_name">{character.name}</h4>
+          {/* Datos básicos reutilizando estilos */}
+          <div className="detail_basic_data">
+            <p className="item_data_line">
+              <span className="item_label">Gender: </span>
+              {character.gender}
+            </p>
 
-            <div className="item_data">
-              <p className="item_data_line">
-                <span className="item_label">Gender:</span>{" "}
-                {character.gender}
-              </p>
-              <p className="item_data_line">
-                <span className="item_label">Species:</span>{" "}
-                {character.race}
-              </p>
-            </div>
+            <p className="item_data_line">
+              <span className="item_label">Species: </span>
+              {character.race}
+            </p>
           </div>
-        </article>
-      </section>
-      <NavLink className="link" to="/">
-          Back to Home
+        </section>
+
+        {/* COLUMNA DERECHA */}
+        <section className="detail_right">
+          {/* Nombre */}
+          <div className="detail_name_cont">
+            <h2 className="detail_name">{character.name}</h2>
+          </div>
+
+          {/* Texto extendido */}
+          <div className="detail_extended_data">
+            {character.ch_quote && (
+              <p className="item_data_line">
+                <span className="item_label">Quote: </span>
+                {character.ch_quote}
+              </p>
+            )}
+
+            {character.ch_description && (
+              <p className="item_data_line">
+                <span className="item_label">Description: </span>
+                {character.ch_description}
+              </p>
+            )}
+
+            {character.ch_class && (
+              <p className="item_data_line">
+                <span className="item_label">Class: </span>
+                {character.ch_class}
+              </p>
+            )}
+
+            {character.ch_appearance && (
+              <p className="item_data_line">
+                <span className="item_label">Appearance: </span>
+                {Array.isArray(character.ch_appearance)
+                  ? character.ch_appearance.join(", ")
+                  : character.ch_appearance}
+              </p>
+            )}
+
+            {character.ch_is_romanceable !== null && (
+              <p className="item_data_line">
+                <span className="item_label">Romanceable: </span>
+                {character.ch_is_romanceable ? "Yes" : "No"}
+              </p>
+            )}
+          </div>
+          <NavLink className="link" to="/characters">
+          ← Back to Characters
         </NavLink>
+        </section>
+      </article>
+    <div className="link_to_home_cont">
+      <NavLink className="link_to_home" to="/">
+        ← Back to Home
+      </NavLink>
+      </div>
     </div>
   );
 }
