@@ -1,37 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router";
 
-/*const characters = [
-  {
-    characterId: 0,
-    name: "Commander Shepard",
-    gender: "Female/Male",
-    race: "Human",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmJw7yivIx9SU6dVshPN1L8h-J-tGcZNGvNw&s",
-  },
-  {
-    characterId: 1,
-    name: "Garrus Vakarian",
-    gender: "Male",
-    race: "Turian",
-    img: "https://static.wikia.nocookie.net/masseffect/images/3/36/Garrus_Character_Shot.png",
-  },
-  {
-    characterId: 2,
-    name: "Tali'Zorah nar Rayya",
-    gender: "Female",
-    race: "Quarian",
-    img: "https://static.wikia.nocookie.net/masseffect/images/2/2f/Talicharactershotme2.jpg",
-  },
-  {
-    characterId: 3,
-    name: "Legion",
-    gender: "A.I.",
-    race: "Geth",
-    img: "https://static.wikia.nocookie.net/masseffect/images/2/25/Legion.png",
-  },
-];*/
-
 function Characters() {
   //const [charactersList, setCharactersList] = useState(characters);
   const [characters, setCharacters] = useState([]);
@@ -67,9 +36,9 @@ function Characters() {
                 />
               </div>
               <div>
-                <h4>Nombre: {character.name}</h4>
-                <p>Género: {character.gender}</p>
-                <p>Especie: {character.race}</p>
+                <h4>{character.name}</h4>
+                <p>{character.gender}</p>
+                <p>{character.race}</p>
               </div>
             </article>
           );
