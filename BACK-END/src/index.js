@@ -46,3 +46,27 @@ server.get('/api/characters', async (req, res) =>{
     );
     res.json(rows);
 });
+
+server.get('/api/classes', async (req, res) =>{
+    const connection = await getConnection();
+    const [rows] = await connection.query(
+      `SELECT * FROM classes`
+    );
+    res.json(rows);
+});
+
+server.get('/api/planets', async (req, res) =>{
+    const connection = await getConnection();
+    const [rows] = await connection.query(
+      `SELECT * FROM planets`
+    );
+    res.json(rows);
+});
+
+server.get('/api/races', async (req, res) =>{
+    const connection = await getConnection();
+    const [rows] = await connection.query(
+      `SELECT * FROM races`
+    );
+    res.json(rows);
+});
