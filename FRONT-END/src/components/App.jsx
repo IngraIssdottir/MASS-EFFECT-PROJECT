@@ -8,6 +8,7 @@ import Characters from "../pages/Characters";
 import Planets from "../pages/Planets";
 import Races from "../pages/Races";
 import Classes from "../pages/Classes";
+import CharacterDetail from "../pages/CharacterDetail";
 
 import "../styles/App.scss";
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/planets" element={<Planets />}/>
         <Route path="/races" element={<Races />}/>
         <Route path="/classes" element={<Classes />}/>
+        <Route path="/characters/:id" element={<CharacterDetail />}/>
       </Routes>
       
     </div>

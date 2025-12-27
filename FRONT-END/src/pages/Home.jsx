@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 function Home() {
   return (
     <div>
-      <h1 className="header">Mass Effect Codex</h1>;
+      <h1 className="header">Mass Effect Codex</h1>
       <ul className="menu">
         <li className="section_menu">
           <NavLink className="link" to="/characters">Personajes</NavLink>

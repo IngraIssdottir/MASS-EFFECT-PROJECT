@@ -36,7 +36,7 @@ function Characters() {
                 />
               </div>
               <div className="item_info">
-                <h4 className="item_name">{character.name}</h4>
+                <h4 className="item_name"><NavLink className="link" to={`/characters/${character.id}`}>{character.name}</NavLink></h4>
                 <div className="item_data">
                   <p className="item_data_line">
                     <span className="item_label">Gender: </span>

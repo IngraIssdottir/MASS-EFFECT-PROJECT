@@ -70,3 +70,25 @@ server.get('/api/races', async (req, res) =>{
     );
     res.json(rows);
 });
+
+server.get('/api/characters/:id', async (req, res) => {
+  const characterId = req.params.id;
+
+  const connection = await getConnection();
+  const [rows] = await connection.query(
+    `SELECT *
+    FROM characters
+    LEFT JOIN character_details
+      ON characters.id = character_details.character_id
+    WHERE characters.id = ?`,
+    [characterId]
+  );
+
+  if (rows.length === 0) {
+  return res.status(404).json({
+    error: "Character not found"
+  });
+}
+
+  res.json(rows[0]);
+});
