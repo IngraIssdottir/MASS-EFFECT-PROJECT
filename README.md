@@ -3,21 +3,20 @@ This project is the creation of a web page using React components, SASS partials
 The main purpose of this project is practice: reviewing and reinforcing everything I learned during the bootcamp by building a web application from scratch.
 
 I am revisiting the full development process using:
-
-· HTML
-· CSS
-· SASS (partials)
-· React
-· Express
-· MySQL
-· External tools and services such as Aiven and Postman
+- HTML
+- CSS
+- SASS (partials)
+- React
+- Express
+- MySQL
+- External tools and services such as Aiven and Postman
 
 ## Project Structure
 
 The page has (or will have):
-· A landing page with a navigation menu
-· Four different main sections
-· A detail page inside the Characters section
+- A landing page with a navigation menu
+- Four different main sections
+- A detail page inside the Characters section
 
 ## Development Plan
 
