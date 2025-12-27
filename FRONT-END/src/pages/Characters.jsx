@@ -37,7 +37,7 @@ function Characters() {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
-    fetch("./api/api-masseffect.json")
+    fetch("http://localhost:3000/api/characters")
       .then((res) => {
         return res.json();
       })
