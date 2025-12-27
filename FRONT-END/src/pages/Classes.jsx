@@ -35,10 +35,18 @@ function Classes() {
                   alt={`imagen de ${oneClass.name}`}
                 />
               </div>
-              <div>
-                <h4>{oneClass.name}</h4>
-                <p>{oneClass.description}</p>
-                <p>{oneClass.powers}</p>
+              <div className="item_info">
+                <h4 className="item_name">{oneClass.name}</h4>
+                <div className="item_data">
+                  <p className="item_data_line">
+                    <span className="item_label">Description: </span>
+                    {oneClass.description}
+                  </p>
+                  <p className="item_data_line">
+                    <span className="item_label">Powers: </span>
+                    {oneClass.powers}
+                  </p>
+                </div>
               </div>
             </article>
           );
@@ -47,7 +55,6 @@ function Classes() {
       </section>
     </div>
   );
-
 }
 
 export default Classes;

@@ -35,11 +35,22 @@ function Races() {
                   alt={`imagen de ${race.name}`}
                 />
               </div>
-              <div>
-                <h4>{race.name}</h4>
-                <p>Description: {race.description}</p>
-                <p>Home wolrd: {race.home_world}</p>
-                <p>Category: {race.category}</p>
+              <div className="item_info">
+                <h4 className="item_name">{race.name}</h4>
+                <div className="item_data">
+                  <p className="item_data_line">
+                    <span className="item_label">Description: </span>
+                    {race.description}
+                  </p>
+                  <p className="item_data_line">
+                    <span className="item_label">Home wolrd: </span>
+                    {race.home_world}
+                  </p>
+                  <p className="item_data_line">
+                    <span className="item_label">Category: </span>
+                    {race.category}
+                  </p>
+                </div>
               </div>
             </article>
           );
@@ -48,7 +59,6 @@ function Races() {
       </section>
     </div>
   );
-
 }
 
 export default Races;

@@ -35,10 +35,18 @@ function Planets() {
                   alt={`imagen de ${planet.name}`}
                 />
               </div>
-              <div>
-                <h4>{planet.name}</h4>
-                <p>{planet.description}</p>
-                <p>{planet.home_race}</p>
+              <div className="item_info">
+                <h4 className="item_name">{planet.name}</h4>
+                <div className="item_data">
+                  <p className="item_data_line">
+                    <span className="item_label">Description: </span>
+                    {planet.description}
+                  </p>
+                  <p className="item_data_line">
+                    <span className="item_label">Home planet of: </span>
+                    {planet.home_race}
+                  </p>
+                </div>
               </div>
             </article>
           );
@@ -47,7 +55,6 @@ function Planets() {
       </section>
     </div>
   );
-
 }
 
 export default Planets;

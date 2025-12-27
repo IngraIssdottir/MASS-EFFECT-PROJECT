@@ -64,6 +64,29 @@
   }
 }
 
+.item_info {
+  padding: 0.5rem 0;
+}
+
+.item_name {
+  margin-bottom: 0.75rem;
+}
+
+.item_data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: left;
+}
+
+.item_label {
+  font-weight: 700;
+}
+
+.item_data_line {
+  margin-left: 0.75rem;
+}
+
 @media (min-width: 768px) {
   .cards_cont {
     display: grid;

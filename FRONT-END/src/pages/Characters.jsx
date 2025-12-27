@@ -35,10 +35,18 @@ function Characters() {
                   alt={`imagen de ${character.name}`}
                 />
               </div>
-              <div>
-                <h4>{character.name}</h4>
-                <p>{character.gender}</p>
-                <p>{character.race}</p>
+              <div className="item_info">
+                <h4 className="item_name">{character.name}</h4>
+                <div className="item_data">
+                  <p className="item_data_line">
+                    <span className="item_label">Gender: </span>
+                    {character.gender}
+                  </p>
+                  <p className="item_data_line">
+                    <span className="item_label">Species: </span>
+                    {character.race}
+                  </p>
+                </div>
               </div>
             </article>
           );
