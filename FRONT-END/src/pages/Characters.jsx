@@ -19,11 +19,12 @@ function Characters() {
     <div>
       <section className="list_title_cont">
         <h1 className="list_title">Personajes</h1>
-        <NavLink className="link" to="/">
+      </section>
+      <div className="link_to_home_cont">
+        <NavLink className="link_to_home" to="/">
           ← Back to Home
         </NavLink>
-      </section>
-
+      </div>
       <section className="cards_cont">
         {characters.map((character) => {
           return (
@@ -36,7 +37,11 @@ function Characters() {
                 />
               </div>
               <div className="item_info">
-                <h4 className="item_name"><NavLink className="link" to={`/characters/${character.id}`}>{character.name}</NavLink></h4>
+                <h4 className="item_name">
+                  <NavLink className="link" to={`/characters/${character.id}`}>
+                    {character.name}
+                  </NavLink>
+                </h4>
                 <div className="item_data">
                   <p className="item_data_line">
                     <span className="item_label">Gender: </span>
@@ -53,6 +58,11 @@ function Characters() {
         })}
         ;
       </section>
+      <div className="link_to_home_cont">
+        <NavLink className="link_to_home" to="/">
+          ← Back to Home
+        </NavLink>
+      </div>
     </div>
   );
 }

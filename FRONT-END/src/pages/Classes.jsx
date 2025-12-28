@@ -19,11 +19,12 @@ function Classes() {
     <div>
       <section className="list_title_cont">
         <h1 className="list_title">Classes</h1>
-        <NavLink className="link" to="/">
+      </section>
+      <div className="link_to_home_cont">
+        <NavLink className="link_to_home" to="/">
           ← Back to Home
         </NavLink>
-      </section>
-
+      </div>
       <section className="cards_cont">
         {classes.map((oneClass) => {
           return (
@@ -53,6 +54,11 @@ function Classes() {
         })}
         ;
       </section>
+      <div className="link_to_home_cont">
+        <NavLink className="link_to_home" to="/">
+          ← Back to Home
+        </NavLink>
+      </div>
     </div>
   );
 }

@@ -1,3 +1,7 @@
+@keyframes aparecer {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
 /* =========================
    CHARACTER DETAIL LAYOUT
    ========================= */
@@ -13,6 +17,7 @@
   border-radius: 20px;
   background-color: #234c86;
   color: aliceblue;
+  animation: aparecer 1s ease-out forwards;
 }
 
 /* -------------------------
@@ -81,15 +86,21 @@ background-color: #0b1f3a;
 }
 
 .link_to_home_cont {
-    border: solid #1f6feb;
+  border: solid #1f6feb;
   border-radius: 20px;
   background-color: #234c86;
   color: aliceblue;
   width: 150px;
   text-align: center;
-  margin-left: 2rem;
+  margin: 2rem 0rem 2rem 2rem;
+
 }
 
 .link_to_home {
     all: unset;
+    animation: aparecer 2s ease-out forwards;
+}
+
+.link_to_home:hover  {
+  filter: drop-shadow(0 0 6px #4cc3ff);
 }
