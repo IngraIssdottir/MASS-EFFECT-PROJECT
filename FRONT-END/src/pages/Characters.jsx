@@ -6,7 +6,8 @@ function Characters() {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/characters")
+    fetch(`https://mass-effect-project.onrender.com
+/api/characters`)
       .then((res) => {
         return res.json();
       })

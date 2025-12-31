@@ -7,7 +7,8 @@ function CharacterDetail() {
   const [character, setCharacter] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/api/characters/${id}`)
+    fetch(`https://mass-effect-project.onrender.com
+/api/characters/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setCharacter(data);

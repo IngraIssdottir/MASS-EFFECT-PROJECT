@@ -6,7 +6,8 @@ function Races() {
   const [races, setRaces] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/races")
+    fetch(`https://mass-effect-project.onrender.com
+/api/races`)
       .then((res) => {
         return res.json();
       })

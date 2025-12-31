@@ -6,7 +6,8 @@ function Planets() {
   const [planets, setPlanets] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/planets")
+    fetch(`https://mass-effect-project.onrender.com
+/api/planets`)
       .then((res) => {
         return res.json();
       })

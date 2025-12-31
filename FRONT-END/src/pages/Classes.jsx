@@ -6,7 +6,8 @@ function Classes() {
   const [classes, setClasses] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/classes")
+    fetch(`https://mass-effect-project.onrender.com
+/api/classes`)
       .then((res) => {
         return res.json();
       })
