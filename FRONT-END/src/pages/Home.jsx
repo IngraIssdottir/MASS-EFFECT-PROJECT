@@ -13,7 +13,7 @@ function Home() {
             <span className="menu_icon_cont">
               <img
                 className="menu_icon"
-                src="/src/images/paragon.png"
+                src="/images/paragon.png"
                 alt="paragon simbol"
               />
             </span>
@@ -21,7 +21,7 @@ function Home() {
             <span className="menu_icon_cont">
               <img
                 className="menu_icon"
-                src="/src/images/renegade.png"
+                src="/images/renegade.png"
                 alt="renegade simbol"
               />
             </span>
@@ -33,7 +33,7 @@ function Home() {
             <span className="menu_icon">
               <img
                 className="menu_icon"
-                src="/src/images/paragon.png"
+                src="/images/paragon.png"
                 alt="paragon simbol"
               />
             </span>
@@ -41,7 +41,7 @@ function Home() {
             <span className="menu_icon">
               <img
                 className="menu_icon"
-                src="/src/images/renegade.png"
+                src="/images/renegade.png"
                 alt="renegade simbol"
               />
             </span>
@@ -53,7 +53,7 @@ function Home() {
             <span className="menu_icon">
               <img
                 className="menu_icon"
-                src="/src/images/paragon.png"
+                src="/images/paragon.png"
                 alt="paragon simbol"
               />
             </span>
@@ -61,7 +61,7 @@ function Home() {
             <span className="menu_icon">
               <img
                 className="menu_icon"
-                src="/src/images/renegade.png"
+                src="/images/renegade.png"
                 alt="renegade simbol"
               />
             </span>
@@ -73,7 +73,7 @@ function Home() {
             <span className="menu_icon">
               <img
                 className="menu_icon"
-                src="/src/images/paragon.png"
+                src="/images/paragon.png"
                 alt="paragon simbol"
               />
             </span>
@@ -81,7 +81,7 @@ function Home() {
             <span className="menu_icon">
               <img
                 className="menu_icon"
-                src="/src/images/renegade.png"
+                src="/images/renegade.png"
                 alt="renegade simbol"
               />
             </span>
