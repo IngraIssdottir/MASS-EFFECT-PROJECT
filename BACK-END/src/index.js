@@ -25,14 +25,17 @@ server.listen(port, () => {
 
 
 async function getConnection() {
-  const  connection = await mysql.createConnection({
-    host: 'localhost',
-    port: 3306,
-    database: 'me-codex',
-    user: 'root',
-    password: process.env.MYSQL_PASSWORD,
+  const connection = await mysql.createConnection({
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    ssl: {
+      rejectUnauthorized: false,
+    },
   });
-    return connection;
+  return connection;
 }
 
 server.get('/', (req, res) => {
