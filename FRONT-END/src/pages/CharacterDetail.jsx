@@ -98,14 +98,14 @@ function CharacterDetail() {
             )}
           </div>
           <NavLink className="link" to="/characters">
-          ← Back to Characters
-        </NavLink>
+            ← Back to Characters
+          </NavLink>
         </section>
       </article>
-    <div className="link_to_home_cont">
-      <NavLink className="link_to_home" to="/">
-        ← Back to Home
-      </NavLink>
+      <div className="link_to_home_cont">
+        <NavLink className="link_to_home" to="/">
+          ← Back to Home
+        </NavLink>
       </div>
     </div>
   );

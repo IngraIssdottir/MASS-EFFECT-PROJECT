@@ -1,16 +1,20 @@
 @keyframes aparecer {
-  from { opacity: 0; transform: scale(0.8); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .main {
   padding: 2rem;
-  
 }
 
 .header {
   border: solid #1f6feb;
-  height: 10dvh;
   width: 90dvw;
   justify-self: center;
   margin-top: 1rem;
@@ -23,6 +27,8 @@
   font-weight: 200;
   font-size: x-large;
   animation: aparecer 1s ease-out forwards;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .menu {
@@ -95,8 +101,6 @@
     font-weight: 200;
     font-size: 5dvw;
   }
-
-  
 }
 
 @media (min-width: 1000px) {

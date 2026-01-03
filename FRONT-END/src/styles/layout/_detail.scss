@@ -1,10 +1,15 @@
 @keyframes aparecer {
-  from { opacity: 0; transform: scale(0.8); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
-/* =========================
-   CHARACTER DETAIL LAYOUT
-   ========================= */
+
+/*CHARACTER DETAIL LAYOUT*/
 
 .detail_card {
   width: 90%;
@@ -20,9 +25,7 @@
   animation: aparecer 1s ease-out forwards;
 }
 
-/* -------------------------
-   COLUMNA IZQUIERDA
-   ------------------------- */
+/*COLUMNA IZQUIERDA*/
 
 .detail_left {
   width: 30%;
@@ -56,9 +59,7 @@
   text-align: left;
 }
 
-/* -------------------------
-   COLUMNA DERECHA
-   ------------------------- */
+/*COLUMNA DERECHA */
 
 .detail_right {
   width: 70%;
@@ -71,8 +72,9 @@
 .detail_name_cont {
   padding: 0.75rem 1rem;
   border-radius: 14px;
-background-color: #0b1f3a;
+  background-color: #0b1f3a;
   text-align: center;
+  border: solid #1f6feb;
 }
 
 .detail_name {
@@ -93,14 +95,14 @@ background-color: #0b1f3a;
   width: 150px;
   text-align: center;
   margin: 2rem 0rem 2rem 2rem;
-
 }
+
 
 .link_to_home {
-    all: unset;
-    animation: aparecer 2s ease-out forwards;
+  all: unset;
+  animation: aparecer 2s ease-out forwards;
 }
 
-.link_to_home:hover  {
+.link_to_home:hover {
   filter: drop-shadow(0 0 6px #4cc3ff);
 }
